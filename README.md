@@ -1,5 +1,3 @@
 # Converter
 
-Zadanie 1 - converter 
-
-Zadanie okazło się być podobne do kilku jakie robiłem wcześniej w ramach nauki. Dodawanie nowych elementów w tym wypadku kafli znalazłem w zadaniu jakie wykonywałem w ramach kursu - dodawanie i usuwanie elemntó z listy. Kolejna rzecz - obiekt Math.random wykorzystałem w podobny sposób jak w jednym z przykładów książki Johna Ducketa "Javascript & JQuery Interactive front-end web development". Sposób na wyświetlanie aktualnej daty i czasu po kliknięciu znalzłem na stackoverflow. Wykorzystałem również trochę inną grafikę - dodałęm inny kapelusz gdyż nie została załączona paczka z assetami. Najtrudniej było znaleźć informacje w necie i poskłądać je w całość. Na początku popełniłem też błąd wypisując zmienne odpowiedzialne za datę i czas pozza funkcja, były one globalne i nie wyświetlałą się aktualna data po każdym kliknięciu. Odpowiedź aby zmienne dodać wewnątrz funkcji znalazłem na forum.
+EUR to PLN

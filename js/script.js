@@ -11,11 +11,18 @@ btnAdd.addEventListener('click', function() {
 	var date = new Date();
 	var n = date.toDateString();
 	var time = date.toLocaleTimeString();
-	//display money amount in a new tile
-	bunch_of_tiles.innerHTML += '<div>' + 'pln amount' + '<br/>' + yourMoney.toFixed(2)
+	
+	//check if the value is a number + display money amount in a new tile
+	if(userValue <= 0) {
+		alert("Value must be greater than zero");
+		bunch_of_tiles.innerHTML += '<div>' + 'pln amount' + '<br/>' + "wartość musi byc większa od zero"
 	+ '<div>' + '<img src="img/clock.svg" alt="clock">' + '  ' + n + ' ' + time + '</div>' + '</div>';
-	//check if the value is a number
-	if(isNaN(userValue)) {
+	}else if(isNaN(userValue)) {
 		alert("Value must be a number");
+		bunch_of_tiles.innerHTML += '<div>' + 'pln amount' + '<br/>' + "błąd, wpisz liczbę"
+	+ '<div>' + '<img src="img/clock.svg" alt="clock">' + '  ' + n + ' ' + time + '</div>' + '</div>';
+	}else if(userValue > 0) {
+		bunch_of_tiles.innerHTML += '<div>' + 'pln amount' + '<br/>' + yourMoney.toFixed(2)
+	+ '<div>' + '<img src="img/clock.svg" alt="clock">' + '  ' + n + ' ' + time + '</div>' + '</div>';
 	}
 });
