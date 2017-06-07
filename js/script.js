@@ -15,11 +15,11 @@ btnAdd.addEventListener('click', function() {
 	//check if the value is a number + display money amount in a new tile
 	if(userValue <= 0) {
 		alert("Value must be greater than zero");
-		bunch_of_tiles.innerHTML += '<div>' + 'pln amount' + '<br/>' + "wartość musi byc większa od zero"
+		bunch_of_tiles.innerHTML += '<div>' + 'pln amount' + '<br/>' + "amount must be greater than zero"
 	+ '<div>' + '<img src="img/clock.svg" alt="clock">' + '  ' + n + ' ' + time + '</div>' + '</div>';
 	}else if(isNaN(userValue)) {
 		alert("Value must be a number");
-		bunch_of_tiles.innerHTML += '<div>' + 'pln amount' + '<br/>' + "błąd, wpisz liczbę"
+		bunch_of_tiles.innerHTML += '<div>' + 'pln amount' + '<br/>' + "error, enter a number"
 	+ '<div>' + '<img src="img/clock.svg" alt="clock">' + '  ' + n + ' ' + time + '</div>' + '</div>';
 	}else if(userValue > 0) {
 		bunch_of_tiles.innerHTML += '<div>' + 'pln amount' + '<br/>' + yourMoney.toFixed(2)
